@@ -5,7 +5,7 @@ import 'custom_button.dart';
 import 'package:latihan111pplg2/user_storage.dart';
 import 'package:latihan111pplg2/user_page.dart';
 import 'package:collection/collection.dart';
-import 'package:latihan111pplg2/user_model.dart'; // Make sure this file contains the User class
+import 'package:latihan111pplg2/user_model.dart'; 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
