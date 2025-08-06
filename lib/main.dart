@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:latihan111pplg2/register_page.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:latihan111pplg2/pages/calculator_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Registration App',
       theme: ThemeData(
         
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const RegisterPage(),
+      home: CalculatorPage(),
     );
   }
 }
