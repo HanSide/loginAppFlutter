@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:latihan111pplg2/custom_text.dart';
 import 'package:latihan111pplg2/register_page.dart';
 import 'custom_input.dart';
 import 'custom_button.dart';
@@ -54,19 +55,9 @@ class _LoginPageState extends State<LoginPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 20),
-            const Text(
-              "Welcome To The Login Page",
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.cyanAccent,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            CustomText(myText: "Welcome to the login page", size: 20, type: FontWeight.bold),
             const SizedBox(height: 20),
-            const Text(
-              "Please enter your credentials to login",
-              style: TextStyle(fontSize: 8),
-            ),
+            CustomText(myText: "Please enter your login data", size: 8, type: FontWeight.normal),
             const SizedBox(height: 20),
             CustomInputField(
               controller: usernameController,
@@ -80,6 +71,8 @@ class _LoginPageState extends State<LoginPage> {
             CustomButton(
               text: "Login",
               onPressed: handleLogin,
+              myTextColor: (Colors.blue),
+              
             ),
             const SizedBox(height: 10),
             TextButton(

@@ -6,6 +6,9 @@ import 'package:latihan111pplg2/gender_radio.dart';
 import 'package:latihan111pplg2/user_model.dart';
 import 'package:latihan111pplg2/user_storage.dart';
 import 'package:latihan111pplg2/login_page.dart';
+import 'package:latihan111pplg2/custom_text.dart';
+
+
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
@@ -59,8 +62,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
     Navigator.push(
       context,
-      MaterialPageRoute(
-        builder: (context) => const LoginPage(),
+      MaterialPageRoute(builder: (context) => const LoginPage(),
       ),
     );
     setState(() {
@@ -75,25 +77,24 @@ class _RegisterPageState extends State<RegisterPage> {
     return Scaffold(
       appBar: AppBar(title: const Text("Register Page")),
       body: Container(
-        margin: const EdgeInsets.all(10),
+        margin: const EdgeInsets.all(5),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 20),
-            const Text(
-              "Welcome To The Register Page",
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.cyanAccent,
-                fontWeight: FontWeight.bold,
-              ),
+            CustomText(
+              myText: "Welcome To The Register Page",
+              myTextColor: Colors.cyanAccent,
+              size: 20,
+              type: FontWeight.bold,
             ),
-            const SizedBox(height: 20),
-            const Text(
-              "Please enter your credentials to register",
-              style: TextStyle(fontSize: 12),
+    
+            CustomText(
+              myText: "Please enter your credentials to register",
+              myTextColor: Colors.black,
+              size: 8,
+              type: FontWeight.normal,
             ),
-            const SizedBox(height: 20),
+            
             CustomInputField(
               controller: usernameController,
               label: "Username",
@@ -121,12 +122,13 @@ class _RegisterPageState extends State<RegisterPage> {
                 });
               },
             ),
-            const SizedBox(height: 20),
+           
             CustomButton(
               text: "Login",
               onPressed: handleRegister,
+              myTextColor: (Colors.blue),
             ),
-            const SizedBox(height: 20),
+            
             TextButton(
               onPressed: () {
                 Navigator.push(
