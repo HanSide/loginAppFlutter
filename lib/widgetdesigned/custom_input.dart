@@ -1,5 +1,21 @@
 import 'package:flutter/material.dart';
 
+Widget buildTextField(
+  TextEditingController controller,
+  String label, {
+  bool isNumber = false,
+}) {
+  return TextField(
+    controller: controller,
+    keyboardType: isNumber ? TextInputType.number : TextInputType.text,
+    decoration: InputDecoration(
+      labelText: label,
+      border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+    ),
+  );
+}
+
 class CustomInputField extends StatelessWidget {
   final TextEditingController controller;
   final String label;

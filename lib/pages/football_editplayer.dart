@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan111pplg2/controller/footballeditplayer_controller.dart';
+import 'package:latihan111pplg2/widgetdesigned/custom_input.dart';
 
 class FootballEditplayer extends StatelessWidget {
   const FootballEditplayer({super.key});
@@ -8,7 +9,9 @@ class FootballEditplayer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    
-    final editController = Get.find<EditPlayer>();
+    final editController = Get.put(EditPlayer());
+    final index = Get.arguments as int;
+    editController.loadPlayer(index);
 
     return Scaffold(
       backgroundColor: Colors.grey[100],
@@ -32,11 +35,11 @@ class FootballEditplayer extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                _buildTextField(editController.namaPlayerController, "Nama Player"),
+                buildTextField(editController.namaPlayerController, "Nama Player"),
                 const SizedBox(height: 12),
-                _buildTextField(editController.posisiController, "Posisi"),
+                buildTextField(editController.posisiController, "Posisi"),
                 const SizedBox(height: 12),
-                _buildTextField(
+                buildTextField(
                   editController.angkaPunggungController,
                   "Nomor Punggung",
                   isNumber: true,
@@ -70,17 +73,4 @@ class FootballEditplayer extends StatelessWidget {
     );
   }
 
-
-  Widget _buildTextField(TextEditingController controller, String label,
-      {bool isNumber = false}) {
-    return TextField(
-      controller: controller,
-      keyboardType: isNumber ? TextInputType.number : TextInputType.text,
-      decoration: InputDecoration(
-        labelText: label,
-        border: OutlineInputBorder(borderRadius: BorderRadius.circular(8)),
-        contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-      ),
-    );
-  }
 }

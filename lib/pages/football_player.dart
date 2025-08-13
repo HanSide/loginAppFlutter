@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:latihan111pplg2/controller/footballeditplayer_controller.dart';
 import 'package:latihan111pplg2/controller/footballplayer_controller.dart';
 
 import 'package:latihan111pplg2/routes/routes.dart';
@@ -26,14 +25,12 @@ class FootballPlayer extends StatelessWidget {
             leading: CircleAvatar(
               backgroundImage: AssetImage(player.profileImage),
             ),
-            trailing: IconButton(
-              icon: Icon(Icons.edit),
-              onPressed: () {
-              final editController = Get.put(EditPlayer());
-              editController.loadPlayer(index);
-              Get.toNamed(AppRoutes.footballEditPlayer);
-             },
-            ),
+           trailing: IconButton(
+            icon: Icon(Icons.edit),
+            onPressed: () {
+           Get.toNamed(AppRoutes.footballEditPlayer, arguments: index,);
+           },
+           ), 
           );
         },
        )),

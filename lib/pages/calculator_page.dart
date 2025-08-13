@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan111pplg2/controller/calculator_controller.dart';
-import 'package:latihan111pplg2/custom_button.dart';
+import 'package:latihan111pplg2/widgetdesigned/custom_button.dart';
 import 'package:latihan111pplg2/routes/routes.dart';
-import 'package:latihan111pplg2/widgetdesigned/custom_input1.dart';
+import 'package:latihan111pplg2/widgetdesigned/custom_input.dart';
 
 class CalculatorPage extends StatelessWidget {
   CalculatorPage({super.key});
@@ -38,12 +38,12 @@ class CalculatorPage extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                CustomInputField1(
+                CustomInputField(
                   controller: calculatorController.txtangka1,
                   label: "Masukkan Angka Pertama",
                 ),
                 const SizedBox(height: 12),
-                CustomInputField1(
+                CustomInputField(
                   controller: calculatorController.txtangka2,
                   label: "Masukkan Angka Kedua",
                 ),

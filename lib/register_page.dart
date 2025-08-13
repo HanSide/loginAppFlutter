@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:latihan111pplg2/custom_button.dart';
-import 'package:latihan111pplg2/custom_input.dart';
+import 'package:latihan111pplg2/widgetdesigned/custom_button.dart';
+import 'package:latihan111pplg2/widgetdesigned/custom_input.dart';
 import 'package:latihan111pplg2/date_input.dart';
 import 'package:latihan111pplg2/gender_radio.dart';
 import 'package:latihan111pplg2/user_model.dart';

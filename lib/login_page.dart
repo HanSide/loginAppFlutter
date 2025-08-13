@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:latihan111pplg2/custom_text.dart';
 import 'package:latihan111pplg2/register_page.dart';
-import 'custom_input.dart';
-import 'custom_button.dart';
+import 'widgetdesigned/custom_input.dart';
+import 'widgetdesigned/custom_button.dart';
 import 'package:latihan111pplg2/user_storage.dart';
 import 'package:latihan111pplg2/user_page.dart';
 import 'package:collection/collection.dart';

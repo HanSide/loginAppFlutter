@@ -13,6 +13,7 @@ class EditPlayer extends GetxController{
   final posisiController = TextEditingController();
 
   late int index;
+  
   void loadPlayer(int idx) {
     index = idx;
     var player = footballcontroller.players[index];
