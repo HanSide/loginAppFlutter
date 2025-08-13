@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan111pplg2/controller/calculator_controller.dart';
 import 'package:latihan111pplg2/custom_button.dart';
-import 'package:latihan111pplg2/custom_input.dart';
+import 'package:latihan111pplg2/routes/routes.dart';
+import 'package:latihan111pplg2/widgetdesigned/custom_input1.dart';
 
 class CalculatorPage extends StatelessWidget {
   CalculatorPage({super.key});
@@ -37,12 +38,12 @@ class CalculatorPage extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                CustomInputField(
+                CustomInputField1(
                   controller: calculatorController.txtangka1,
                   label: "Masukkan Angka Pertama",
                 ),
                 const SizedBox(height: 12),
-                CustomInputField(
+                CustomInputField1(
                   controller: calculatorController.txtangka2,
                   label: "Masukkan Angka Kedua",
                 ),
@@ -87,6 +88,9 @@ class CalculatorPage extends StatelessWidget {
                   myTextColor: Colors.redAccent,
                   onPressed: () => calculatorController.clear(),
                 ),
+                CustomButton(text: "Main Menu", onPressed: (){
+                  Get.toNamed(AppRoutes.footballPage);
+                }, myTextColor : Colors.greenAccent)
               ],
             ),
           ),

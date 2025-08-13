@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class CustomInputField extends StatelessWidget {
+class CustomInputField1 extends StatelessWidget {
   final TextEditingController controller;
   final String label;
 
-  const CustomInputField({
+  const CustomInputField1({
     super.key,
     required this.controller,
     required this.label,

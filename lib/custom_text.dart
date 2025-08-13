@@ -9,7 +9,7 @@ class CustomText extends StatelessWidget {
   const CustomText({
     super.key,
     required this.myText,
-    this.myTextColor = Colors.black, // Default color
+    this.myTextColor = Colors.black,
     required this.size,
     required this.type,
   });
