@@ -12,7 +12,13 @@ class FootballPlayer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Football Players"),),
+      backgroundColor: Colors.white,
+      appBar: AppBar(title: Text("Football Players", style: TextStyle(color: Colors.white),),
+      backgroundColor: Colors.blueAccent,
+      foregroundColor: Colors.white,
+      centerTitle: true,
+      elevation: 0,
+      ),
       body : Container(
        margin: const EdgeInsets.all(10),
        child: Obx(()=> ListView.builder(
@@ -28,7 +34,7 @@ class FootballPlayer extends StatelessWidget {
            trailing: IconButton(
             icon: Icon(Icons.edit),
             onPressed: () {
-           Get.toNamed(AppRoutes.footballEditPlayer, arguments: index,);
+           Get.toNamed(AppRoutes.footballEditPlayer, arguments: index);
            },
            ), 
           );

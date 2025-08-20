@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      initialRoute: AppRoutes.calculatorPage,
+      initialRoute: AppRoutes.bottomNav,
       getPages: AppPage.pages,
     );
   }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan111pplg2/controller/calculator_controller.dart';
 import 'package:latihan111pplg2/widgetdesigned/custom_button.dart';
-import 'package:latihan111pplg2/routes/routes.dart';
 import 'package:latihan111pplg2/widgetdesigned/custom_input.dart';
 
 class CalculatorPage extends StatelessWidget {
@@ -51,24 +50,24 @@ class CalculatorPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    CustomButton(
+                    CustomButton1(
                       text: "+",
-                      myTextColor: Colors.blueAccent,
+                      myTextColor: TextStyle(color: Colors.white),
                       onPressed: () => calculatorController.tambah(),
                     ),
-                    CustomButton(
+                    CustomButton1(
                       text: "-",
-                      myTextColor: Colors.blueAccent,
+                      myTextColor: TextStyle(color: Colors.white),
                       onPressed: () => calculatorController.kurang(),
                     ),
-                    CustomButton(
+                    CustomButton1(
                       text: "×",
-                      myTextColor: Colors.blueAccent,
+                      myTextColor: TextStyle(color: Colors.white),
                       onPressed: () => calculatorController.kali(),
                     ),
-                    CustomButton(
+                    CustomButton1(
                       text: "÷",
-                      myTextColor: Colors.blueAccent,
+                      myTextColor: TextStyle(color: Colors.white),
                       onPressed: () => calculatorController.bagi(),
                     ),
                   ],
@@ -85,12 +84,10 @@ class CalculatorPage extends StatelessWidget {
                 const SizedBox(height: 20),
                 CustomButton(
                   text: "Hapus",
-                  myTextColor: Colors.redAccent,
+                  myTextColor: Colors.white,
                   onPressed: () => calculatorController.clear(),
                 ),
-                CustomButton(text: "Main Menu", onPressed: (){
-                  Get.toNamed(AppRoutes.footballPage);
-                }, myTextColor : Colors.greenAccent)
+                const SizedBox(height: 20),
               ],
             ),
           ),
