@@ -7,7 +7,9 @@ import 'package:latihan111pplg2/widgetdesigned/custom_input.dart';
 class CalculatorPage extends StatelessWidget {
   CalculatorPage({super.key});
 
-  final CalculatorController calculatorController = Get.put(CalculatorController());
+  final CalculatorController calculatorController = Get.put(
+    CalculatorController(),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,10 @@ class CalculatorPage extends StatelessWidget {
       backgroundColor: const Color(0xFFEAF0F6),
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
-        title: const Text('Kalkulator GetX', style: TextStyle(color: Colors.white)),
+        title: const Text(
+          'Kalkulator GetX',
+          style: TextStyle(color: Colors.white),
+        ),
         centerTitle: true,
       ),
       body: Padding(
@@ -73,14 +78,16 @@ class CalculatorPage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 30),
-                Obx(() => Text(
-                  "Hasil: ${calculatorController.textHasil.value}",
-                  style: const TextStyle(
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black87,
+                Obx(
+                  () => Text(
+                    "Hasil: ${calculatorController.textHasil.value}",
+                    style: const TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                    ),
                   ),
-                )),
+                ),
                 const SizedBox(height: 20),
                 CustomButton(
                   text: "Hapus",

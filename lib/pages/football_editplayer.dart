@@ -8,7 +8,6 @@ class FootballEditplayer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   
     final editController = Get.put(EditPlayer());
     final index = Get.arguments as int;
     editController.loadPlayer(index);
@@ -28,14 +27,19 @@ class FootballEditplayer extends StatelessWidget {
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
         child: Card(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
           elevation: 3,
           child: Padding(
             padding: const EdgeInsets.all(20),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                buildTextField(editController.namaPlayerController, "Nama Player"),
+                buildTextField(
+                  editController.namaPlayerController,
+                  "Nama Player",
+                ),
                 const SizedBox(height: 12),
                 buildTextField(editController.posisiController, "Posisi"),
                 const SizedBox(height: 12),
@@ -50,7 +54,7 @@ class FootballEditplayer extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {
                       editController.updatePlayer();
-                      Get.back(); 
+                      Get.back();
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.blueAccent,
@@ -61,7 +65,10 @@ class FootballEditplayer extends StatelessWidget {
                     ),
                     child: const Text(
                       "Simpan",
-                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
@@ -72,5 +79,4 @@ class FootballEditplayer extends StatelessWidget {
       ),
     );
   }
-
 }

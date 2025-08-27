@@ -1,11 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan111pplg2/controller/footballplayer_controller.dart';
 import 'package:latihan111pplg2/model/football_model.dart';
 
-class EditPlayer extends GetxController{
-  
+class EditPlayer extends GetxController {
   final footballcontroller = Get.find<FootballplayerController>();
 
   final namaPlayerController = TextEditingController();
@@ -13,7 +11,7 @@ class EditPlayer extends GetxController{
   final posisiController = TextEditingController();
 
   late int index;
-  
+
   void loadPlayer(int idx) {
     index = idx;
     var player = footballcontroller.players[index];
@@ -22,7 +20,7 @@ class EditPlayer extends GetxController{
     posisiController.text = player.posisi;
   }
 
-   void updatePlayer() {
+  void updatePlayer() {
     final updatedPlayer = PlayerModel(
       profileImage: footballcontroller.players[index].profileImage,
       namaPlayer: namaPlayerController.text,
@@ -32,7 +30,7 @@ class EditPlayer extends GetxController{
     footballcontroller.players[index] = updatedPlayer;
   }
 
-    @override
+  @override
   void onClose() {
     namaPlayerController.dispose();
     posisiController.dispose();

@@ -8,7 +8,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-     appBar: AppBar(
+      appBar: AppBar(
         title: const Text(
           "Profile Page",
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
@@ -28,8 +28,7 @@ class ProfilePage extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(20),
             child: Column(
-              crossAxisAlignment:
-                  CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
               children: const [
                 Center(
@@ -40,13 +39,25 @@ class ProfilePage extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
 
-                CustomText(myText: "Nama : Muhammad Rayhan Aulia", size: 16, type: FontWeight.bold),
+                CustomText(
+                  myText: "Nama : Muhammad Rayhan Aulia",
+                  size: 16,
+                  type: FontWeight.bold,
+                ),
                 SizedBox(height: 8),
 
-                CustomText(myText: "Absen : 24", size: 16, type: FontWeight.bold),
+                CustomText(
+                  myText: "Absen : 24",
+                  size: 16,
+                  type: FontWeight.bold,
+                ),
                 SizedBox(height: 8),
 
-                CustomText(myText: "Kelas : XI PPLG 2", size: 16, type: FontWeight.bold),
+                CustomText(
+                  myText: "Kelas : XI PPLG 2",
+                  size: 16,
+                  type: FontWeight.bold,
+                ),
                 SizedBox(height: 8),
 
                 CustomText(
@@ -56,7 +67,11 @@ class ProfilePage extends StatelessWidget {
                 ),
                 SizedBox(height: 8),
 
-                CustomText(myText: "Hobi : Membaca", size: 16, type: FontWeight.bold),
+                CustomText(
+                  myText: "Hobi : Membaca",
+                  size: 16,
+                  type: FontWeight.bold,
+                ),
               ],
             ),
           ),
