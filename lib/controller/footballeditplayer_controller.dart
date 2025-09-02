@@ -12,8 +12,11 @@ class EditPlayer extends GetxController {
 
   late int index;
 
-  void loadPlayer(int idx) {
-    index = idx;
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
+    index = Get.arguments as int;
     var player = footballcontroller.players[index];
     namaPlayerController.text = player.namaPlayer;
     angkaPunggungController.text = player.angkaPunggung.toString();
@@ -28,13 +31,5 @@ class EditPlayer extends GetxController {
       angkaPunggung: int.tryParse(angkaPunggungController.text) ?? 0,
     );
     footballcontroller.players[index] = updatedPlayer;
-  }
-
-  @override
-  void onClose() {
-    namaPlayerController.dispose();
-    posisiController.dispose();
-    angkaPunggungController.dispose();
-    super.onClose();
   }
 }

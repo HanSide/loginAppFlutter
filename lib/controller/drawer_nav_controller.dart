@@ -4,7 +4,7 @@ import '../pages/calculator_page.dart';
 import '../pages/football_player.dart';
 import '../pages/profile_page.dart';
 
-class BottomNavController extends GetxController {
+class DrawerNavController extends GetxController {
   var selectedIndex = 0.obs;
 
   void changeIndex(int index) {
@@ -16,4 +16,10 @@ class BottomNavController extends GetxController {
     FootballPlayer(),
     ProfilePage(),
   ];
+
+  final List<Map<String, dynamic>> menuItems = const [
+    {"title": "Calculator", "icon": Icons.calculate},
+    {"title": "Football", "icon": Icons.sports_soccer_rounded},
+    {"title": "Profile", "icon": Icons.person},
+ ];
 }

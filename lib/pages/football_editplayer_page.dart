@@ -9,9 +9,7 @@ class FootballEditplayer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final editController = Get.put(EditPlayer());
-    final index = Get.arguments as int;
-    editController.loadPlayer(index);
-
+    
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
