@@ -7,14 +7,14 @@ import 'package:latihan111pplg2/user_storage.dart';
 import 'package:latihan111pplg2/user_page.dart';
 import 'package:collection/collection.dart';
 import 'package:latihan111pplg2/user_model.dart'; 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class LoginPages extends StatefulWidget {
+  const LoginPages({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<LoginPages> createState() => _LoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginPageState extends State<LoginPages> {
   final TextEditingController usernameController = TextEditingController();
   final TextEditingController passwordController = TextEditingController();
   String statusLogin = "";

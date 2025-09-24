@@ -16,10 +16,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Registration App',
       theme: ThemeData(
-        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      initialRoute: AppRoutes.drawerNavPage,
+      initialRoute: AppRoutes.splashscreenPage,
       getPages: AppPage.pages,
     );
   }

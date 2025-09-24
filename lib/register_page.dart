@@ -62,7 +62,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const LoginPage(),
+      MaterialPageRoute(builder: (context) => const LoginPages(),
       ),
     );
     setState(() {
@@ -133,7 +133,7 @@ class _RegisterPageState extends State<RegisterPage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const LoginPage()),
+                  MaterialPageRoute(builder: (context) => const LoginPages()),
                 );
               },
               child: const Text("Already have an account? Login"),

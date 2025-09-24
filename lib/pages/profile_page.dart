@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:latihan111pplg2/controller/profile_controller.dart';
 import 'package:latihan111pplg2/custom_text.dart';
+import 'package:latihan111pplg2/widgetdesigned/custom_button.dart';
 
 class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
+   ProfilePage({super.key});
 
+final controller = Get.find<ProfileController>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +34,7 @@ class ProfilePage extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisSize: MainAxisSize.min,
-              children: const [
+              children: [
                 Center(
                   child: CircleAvatar(
                     radius: 50,
@@ -72,6 +76,9 @@ class ProfilePage extends StatelessWidget {
                   size: 16,
                   type: FontWeight.bold,
                 ),
+                CustomButton1(text: "Logout", onPressed: (){
+                 controller.logout();
+                }, myTextColor:TextStyle(color: Colors.blue)),
               ],
             ),
           ),
