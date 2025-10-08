@@ -7,4 +7,5 @@ static const String drawerNavPage= "/drawerNavPage";
 static const String loginPage= "/loginPage";
 static const String splashscreenPage= "/splashscreenPage";
 static const String contactPage= "/contactPage";
+static const String examplePage= "/examplePage";
 }

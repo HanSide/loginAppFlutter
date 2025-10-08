@@ -1,7 +1,13 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan111pplg2/model/football_model.dart';
 
 class FootballplayerController extends GetxController {
+  var isMobile = true.obs;
+  void updateLayout(BoxConstraints constraints) {
+    isMobile.value = constraints.maxWidth < 600;
+  }
+
   var players = <PlayerModel>[
     PlayerModel(
       namaPlayer: "Amir Fattah",
