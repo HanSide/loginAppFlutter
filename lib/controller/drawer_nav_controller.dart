@@ -6,6 +6,8 @@ import '../pages/football_player.dart';
 import '../pages/profile_page.dart';
 
 class DrawerNavController extends GetxController {
+
+  
   var selectedIndex = 0.obs;
 
   void changeIndex(int index) {

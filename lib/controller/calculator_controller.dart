@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -46,5 +47,6 @@ class CalculatorController extends GetxController {
     txtangka1.clear();
     txtangka2.clear();
     textHasil.value = "";
+    
   }
 }

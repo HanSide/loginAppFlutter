@@ -2,22 +2,22 @@ import 'package:get/get.dart';
 import 'package:latihan111pplg2/routes/routes.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class SplashscreenController extends GetxController{
+class SplashscreenController extends GetxController {
   @override
   void onInit() {
     super.onInit();
     checkLogin();
   }
 
-
-  checkLogin() async {
+  Future<void> checkLogin() async {
     final pref = await SharedPreferences.getInstance();
-    if(pref.getString("Username") != null){
-      await Future.delayed(const Duration(seconds: 3));
+    final token = pref.getString("token");
+
+    await Future.delayed(const Duration(seconds: 3));
+
+    if (token != null && token.isNotEmpty) {
       Get.offAllNamed(AppRoutes.drawerNavPage);
-    }
-    else{
-      await Future.delayed(const Duration(seconds: 3));
+    } else {
       Get.offAllNamed(AppRoutes.loginPage);
     }
   }

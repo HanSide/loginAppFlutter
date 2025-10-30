@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "554770857343",
+    "project_id": "test-fdd2c",
+    "storage_bucket": "test-fdd2c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554770857343:android:1312d263a8cf73c07b6e4a",
+        "android_client_info": {
+          "package_name": "com.example.latihan111pplg2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpERiJBa4Bff0rRw621ySqAUqxosN1p5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
