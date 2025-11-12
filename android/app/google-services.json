@@ -12,7 +12,12 @@
           "package_name": "com.example.latihan111pplg2"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "554770857343-htltge4qdj82pgb4ttgdo09j78u3k0i9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCpERiJBa4Bff0rRw621ySqAUqxosN1p5A"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554770857343-e61m13235bgn7i4bfo22atofmtld5kbu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

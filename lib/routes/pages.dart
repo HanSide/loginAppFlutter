@@ -3,6 +3,8 @@ import 'package:latihan111pplg2/bindings/Drawer_bindings.dart';
 import 'package:latihan111pplg2/bindings/example_binding.dart';
 import 'package:latihan111pplg2/bindings/login_api_binding.dart';
 import 'package:latihan111pplg2/bindings/splash_binding.dart';
+import 'package:latihan111pplg2/bindings/table_premier_binding.dart';
+import 'package:latihan111pplg2/model/table_premier_model.dart';
 import 'package:latihan111pplg2/pages/contact_page.dart';
 import 'package:latihan111pplg2/pages/drawer_nav_page.dart';
 import 'package:latihan111pplg2/pages/calculator_page.dart';
@@ -12,6 +14,7 @@ import 'package:latihan111pplg2/pages/football_player.dart';
 import 'package:latihan111pplg2/pages/login_page.dart';
 import 'package:latihan111pplg2/pages/profile_page.dart';
 import 'package:latihan111pplg2/pages/splashscreen_page.dart';
+import 'package:latihan111pplg2/pages/table_premier_page.dart';
 import 'package:latihan111pplg2/routes/routes.dart';
 
 class AppPage{
@@ -25,5 +28,6 @@ class AppPage{
     GetPage(name: AppRoutes.loginPage, page: () => LoginPage(), binding: LoginApiBinding()),
     GetPage(name: AppRoutes.contactPage, page: () => ContactPage()),
     GetPage(name: AppRoutes.examplePage, page: () => ExamplePage(), binding: ExampleBinding()),
+    GetPage(name: AppRoutes.premierPage, page: () => TablePremierPage()),
   ];
 }

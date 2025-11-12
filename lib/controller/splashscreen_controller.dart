@@ -11,11 +11,11 @@ class SplashscreenController extends GetxController {
 
   Future<void> checkLogin() async {
     final pref = await SharedPreferences.getInstance();
-    final token = pref.getString("token");
+    final uid = pref.getString("firebase_uid");
 
     await Future.delayed(const Duration(seconds: 3));
 
-    if (token != null && token.isNotEmpty) {
+    if (uid != null && uid.isNotEmpty) {
       Get.offAllNamed(AppRoutes.drawerNavPage);
     } else {
       Get.offAllNamed(AppRoutes.loginPage);

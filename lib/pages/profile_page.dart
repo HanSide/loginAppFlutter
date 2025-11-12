@@ -5,9 +5,9 @@ import 'package:latihan111pplg2/custom_text.dart';
 import 'package:latihan111pplg2/widgetdesigned/custom_button.dart';
 
 class ProfilePage extends StatelessWidget {
-   ProfilePage({super.key});
+  ProfilePage({super.key});
 
-final controller = Get.find<ProfileController>();
+  final controller = Get.find<ProfileController>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,9 +76,13 @@ final controller = Get.find<ProfileController>();
                   size: 16,
                   type: FontWeight.bold,
                 ),
-                CustomButton1(text: "Logout", onPressed: (){
-                 controller.logout();
-                }, myTextColor:TextStyle(color: Colors.blue)),
+                CustomButton1(
+                  text: "Logout",
+                  onPressed: () {
+                    controller.logout();
+                  },
+                  myTextColor: TextStyle(color: Colors.blue),
+                ),
               ],
             ),
           ),

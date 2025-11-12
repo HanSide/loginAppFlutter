@@ -8,4 +8,5 @@ static const String loginPage= "/loginPage";
 static const String splashscreenPage= "/splashscreenPage";
 static const String contactPage= "/contactPage";
 static const String examplePage= "/examplePage";
+static const String premierPage= "/premierPage";
 }

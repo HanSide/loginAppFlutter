@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan111pplg2/controller/drawer_nav_controller.dart';
+import 'package:latihan111pplg2/controller/profile_controller.dart';
 
 
 class DrawerNavPage extends StatelessWidget {
   DrawerNavPage({super.key});
 
   final DrawerNavController drawerNavController = Get.put(DrawerNavController());
-
+  final profileController = Get.find<ProfileController>();
+  
   @override
   Widget build(BuildContext context) {
     return Obx(

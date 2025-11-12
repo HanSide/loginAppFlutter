@@ -23,12 +23,12 @@ class CustomInputField extends StatelessWidget {
    final Widget? prefixIcon;
 
   const CustomInputField({
-    Key? key,
+    super.key,
     required this.controller,
     required this.label,
     this.prefixIcon,
     this.isPassword = false,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
