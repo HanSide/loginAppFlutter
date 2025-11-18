@@ -5,6 +5,7 @@ import 'package:latihan111pplg2/bindings/login_api_binding.dart';
 import 'package:latihan111pplg2/bindings/splash_binding.dart';
 import 'package:latihan111pplg2/bindings/table_premier_binding.dart';
 import 'package:latihan111pplg2/model/table_premier_model.dart';
+import 'package:latihan111pplg2/pages/anime_page.dart';
 import 'package:latihan111pplg2/pages/contact_page.dart';
 import 'package:latihan111pplg2/pages/drawer_nav_page.dart';
 import 'package:latihan111pplg2/pages/calculator_page.dart';
@@ -29,5 +30,6 @@ class AppPage{
     GetPage(name: AppRoutes.contactPage, page: () => ContactPage()),
     GetPage(name: AppRoutes.examplePage, page: () => ExamplePage(), binding: ExampleBinding()),
     GetPage(name: AppRoutes.premierPage, page: () => TablePremierPage()),
+    GetPage(name: AppRoutes.animePage, page: () => AnimePage()),
   ];
 }

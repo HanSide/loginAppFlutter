@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:latihan111pplg2/pages/anime_page.dart';
 import 'package:latihan111pplg2/pages/contact_page.dart';
 import 'package:latihan111pplg2/pages/table_premier_page.dart';
 import '../pages/calculator_page.dart';
@@ -18,7 +19,8 @@ class DrawerNavController extends GetxController {
     FootballPlayer(),
     ProfilePage(),
     ContactPage(),
-    TablePremierPage()
+    TablePremierPage(),
+    AnimePage(),
   ];
 
   final List<Map<String, dynamic>> menuItems = const [
@@ -27,5 +29,6 @@ class DrawerNavController extends GetxController {
     {"title": "Profile", "icon": Icons.person},
     {"title": "Contact", "icon": Icons.contact_page_rounded},
     {"title": "FootballTeam", "icon": Icons.sports_soccer_rounded},
+    {"title": "Anime", "icon": Icons.movie},
   ];
 }

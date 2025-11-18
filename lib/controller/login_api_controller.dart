@@ -203,7 +203,7 @@ class LoginApiController extends GetxController {
       final prefs = await SharedPreferences.getInstance();
       await prefs.clear();
 
-      Get.offAllNamed(AppRoutes.drawerNavPage);
+      Get.offAllNamed(AppRoutes.loginPage);
       Get.snackbar('Sukses', 'Logout berhasil');
     } catch (e) {
       Get.snackbar('Error', 'Gagal logout: $e');
